@@ -1,0 +1,17 @@
+{
+  "name": "markdownviewer",
+  "version": "1.0.0",
+  "description": "Realtime Markdown Viewer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Prince Nafis TOURE",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "redis": "^4.7.0",
+    "share": "^0.6.3"
+  }
+}
