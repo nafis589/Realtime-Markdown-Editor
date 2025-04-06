@@ -54,5 +54,4 @@ window.onload = function(){
     }
 
     convertTextAreaToMarkdown();
-    alert()
 };
