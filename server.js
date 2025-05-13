@@ -1,3 +1,4 @@
+require('dotenv').config(); 
 var express = require("express");
 const app = express();
 const { URL } = require('url'); // For safe URL parsing in logs
