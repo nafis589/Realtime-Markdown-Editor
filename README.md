@@ -156,4 +156,14 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📞 Contact / Support
 
-For questions or support, please contact [princenafistoure@gmail.com](princenafistoure@gmail.com). <!-- Replace with your actual email -->
+For questions or support, please contact <div align="center">
+  <p>
+    <a href="mailto:your.email@example.com">
+      <img src="https://img.shields.io/badge/Email-Contact%20Me-blue?style=for-the-badge&logo=gmail" alt="Email" />
+    </a>
+  </p>
+</div> 
+<div align="center">
+  Made with ❤️ by <a href="https://github.com/yourgithubprofile">Prince Nafis TOURE</a>
+</div>
+<!-- Replace with your actual email -->
