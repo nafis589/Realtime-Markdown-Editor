@@ -156,4 +156,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📞 Contact / Support
 
-For questions or support, please contact [your.email@example.com](princenafistoure@gmail.com). <!-- Replace with your actual email -->
+For questions or support, please contact [princenafistoure@gmail.com](princenafistoure@gmail.com). <!-- Replace with your actual email -->
