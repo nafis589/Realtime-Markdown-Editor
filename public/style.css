@@ -20,19 +20,60 @@ html, body, section, .full-height{
     border-left: 1px solid black;
 }
 
+:root {
+    --bg-color: #f8f9fa;
+    --text-color: #212529;
+    --border-color: #dee2e6;
+    --editor-bg: #ffffff;
+    --top-bar-bg: #343a40;
+    --top-bar-text: #ffffff;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #e9ecef;
+    --border-color: #495057;
+    --editor-bg: #2d2d2d;
+    --top-bar-bg: #212529;
+    --top-bar-text: #ffffff;
+    --pad-bg: #2d2d2d;
+    --markdown-bg: #242424;
+}
+
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 .top-bar {
-    background-color: #343a40;
-    color: white;
+    background-color: var(--top-bar-bg);
+    color: var(--top-bar-text);
     padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--top-bar-text);
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+.top-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .top-bar .logo {
@@ -60,13 +101,15 @@ body {
 }
 
 #pad {
-    background-color: #ffffff;
+    background-color: var(--editor-bg);
+    color: var(--text-color);
 }
 
 #markdown {
-    background-color: #f1f1f1;
+    background-color: var(--markdown-bg);
+    color: var(--text-color);
     overflow-y: auto;
-    border-left: 1px solid #ddd;
+    border-left: 1px solid var(--border-color);
 }
 
 @media (max-width: 768px) {
