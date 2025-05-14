@@ -4,20 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Realtime Markdown Viewer</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-</head>
-<body class="container-fluid">
     
-    <section class="row">
-        <textarea class="col-md-6 full-height" id="pad">Write your texte here...</textarea>
-        <div class="col-md-6 full-height" id="markdown"></div>
-    </section>
+    <!-- Bootstrap & Icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="/style.css" rel="stylesheet">
 
+</head>
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="logo">
+            <i class="fas fa-pen-nib"></i> Markdown Editor
+        </div>
+        <div>
+            <a href="https://github.com/nafis589" target="_blank">
+                <i class="fab fa-github"></i> Mon GitHub
+            </a>
+        </div>
+    </div>
+
+    <!-- MAIN EDITOR -->
+    <div class="editor-container">
+        <textarea id="pad">Write your text here...</textarea>
+        <div id="markdown"></div>
+    </div>
+
+    <!-- SCRIPTS -->
     <script src="https://cdn.rawgit.com/showdownjs/showdown/1.0.2/dist/showdown.min.js"></script>
     <script src="/channel/bcsocket.js"></script>
     <script src="/share/share.uncompressed.js"></script>
     <script src="/share/textarea.js"></script>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
+
 </body>
 </html>
